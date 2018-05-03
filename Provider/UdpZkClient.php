@@ -1,16 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Descrhosttion of UDPClient
- *
- * @author AHabchi
- */
 class UdpZkClient {
 
     const USHRT_MAX = 65535;

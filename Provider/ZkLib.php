@@ -1,26 +1,15 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 require 'SoapZkClient.php';
 require 'UdpZkClient.php';
 
-/**
- * Description of ZkSoap
- *
- * @author ahabchi
- */
+
 class ZkLib {
 
     private $soapClient;
     private $udpClient;
 
-    /* static private $soap_commands_available = [
+   /* static private $soap_commands_available = [
       'get_date' => '<GetDate><ArgComKey>%com_key%</ArgComKey></GetDate>',
       'get_att_log' => '<GetAttLog><ArgComKey>%com_key%</ArgComKey><Arg><PIN>%pin%</PIN></Arg></GetAttLog>',
       'get_user_info' => '<GetUserInfo><ArgComKey>%com_key%</ArgComKey><Arg><PIN>%pin%</PIN></Arg></GetUserInfo>',
@@ -35,8 +24,8 @@ class ZkLib {
       'delete_user_password' => '<ClearUserPassword><ArgComKey>%com_key%</ArgComKey><Arg><PIN>%pin%</PIN></Arg></ClearUserPassword>',
       'delete_data' => '<ClearData><ArgComKey>%com_key%</ArgComKey><Arg><Value>%value%</Value></Arg></ClearData>',
       'refresh_db' => '<RefreshDB><ArgComKey>%com_key%</ArgComKey></RefreshDB>',
-      ]; */
-
+      ]; 
+*/
     public function __construct($host) {
         $soap_options = array(
             'location' => "http://" . $host . "/iWsService",
